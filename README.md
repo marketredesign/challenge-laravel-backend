@@ -8,6 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
+NB: when installing via Docker, only composer is required.
 
 * PHP >= 7.3
 * BCMath PHP Extension
@@ -26,9 +27,17 @@ purposes. See deployment for notes on how to deploy the project on a live system
 
 ### Installing
 
-There are multiple possibilities on getting a development environment up and running. If you prefer to develop in a
-Docker environment, it is recommended to use [Laravel Sail](https://laravel.com/docs/8.x/sail). If you prefer a manual
-installation, follow the steps below.
+There are multiple possibilities on getting a development environment up and running. We provide two different types of
+installation; using docker and manually.
+
+#### Docker installation
+1. Make sure you have Docker and Docker-compose installed.
+2. Execute `composer install` to install all composer dependencies.
+3. Copy `.env.example` to `.env`.
+4. Execute `./vendor/bin/sail up` to create the docker environment.
+5. Execute `./vendor/bin/sail php artisan migrate` to create all tables in the database.
+
+For more information see [Laravel Sail](https://laravel.com/docs/8.x/sail).
 
 #### Manual installation
 
