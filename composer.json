@@ -42,6 +42,10 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "test": [
+            "@putenv XDEBUG_MODE=coverage",
+            "phpunit -c phpunit.xml"
         ]
     },
     "extra": {

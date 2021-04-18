@@ -1,96 +1,60 @@
-# Checklist REMOVE AFTER CHECKING 
+# Laravel back-end challenge
 
-Go through this checklist after creating your repository. It should only take a couple of minutes. If you encounter any issues, let someone from IT know.
-
-### README
-- [ ] Manually go through and edit the rest of the README.
-
-### Dotfiles
-- [ ] Add a `.gitignore` file.
-
-### GitHub Settings
-- [ ] Add a short description to the repository.
-- [ ] Add a develop branch.
-- [ ] Set develop branch as default branch.
-- [ ] Enable all data services (read-only analysis, dependency graph, security alerts).
-- [ ] Create branch protection rules for master:
-  - [ ] Require pull request review before merging.
-    - [ ] Require 2 reviews. (One for the code and testing (DevOps), and one for semantics)
-    - [ ] Dismiss stale pull request approvals when new commits are pushed.
-  - [ ] Require status checks before merging.
-- [ ] Create branch protection rules for develop:
-  - [ ] Require pull request review before merging.
-    - [ ] Require 2 reviews. (One for the code and testing (DevOps), and one for semantics)
-    - [ ] Dismiss stale pull request approvals when new commits are pushed.
-  - [ ] Require status checks before merging.
-- [ ] Add a .travis.yml file.
-  - [ ] Add the codecov token to env variables.
-- [ ] [OPTIONAL] Add a codecov.yml
-- [ ] Enable the status checks for travis and codecov.
-
-# Project Title
-
-One Paragraph of project description goes here
+Base repository for Laravel back-end coding challenge for applicants.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing
+purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* PHP >= 7.3
+* BCMath PHP Extension
+* Ctype PHP Extension
+* Fileinfo PHP Extension
+* JSON PHP Extension
+* Mbstring PHP Extension
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* PDO_PGSQL PHP Extension
+* Tokenizer PHP Extension
+* XML PHP Extension
+* Xdebug PHP Extension
+* PostgreSQL database
+* Composer
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+There are multiple possibilities on getting a development environment up and running. If you prefer to develop in a
+Docker environment, it is recommended to use [Laravel Sail](https://laravel.com/docs/8.x/sail). If you prefer a manual
+installation, follow the steps below.
 
-Say what the step will be
+#### Manual installation
 
-```
-Give the example
-```
+1. Execute `composer install` to install all composer dependencies.
+2. Copy `.env.example` to `.env` and complete the database credentials.
+3. Execute `php artisan key:generate`.
+4. Execute `php artisan migrate` to create all tables in the database.
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+For development purposes, it is recommended to serve the application either using
+[Laravel Valet](https://laravel.com/docs/8.x/valet) (A linux fork is available) or `php artisan serve`.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system.
+In order to run the tests, the dev dependencies from Composer need to be installed.
+This is the default behaviour if you followed the installation instructions above.
 
-### Break down into end to end tests
-
-Explain what these tests test and why.
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why.
-
-```
-Give an example
-```
+* Execute `composer test` to test all PHP files.
 
 ## Deployment
-
-Add additional notes about how to deploy this on a live system
+n/a
 
 ## Authors
+* **Marijn van der Horst**
 
-* **YOUR NAME HERE** - *Initial work*
-
-See also the list of [contributors](https://github.com/marketredesign/your_project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/marketredesign/microservice_dataset/graphs/contributors) who
+participated in this project.
 
 ## License
 
