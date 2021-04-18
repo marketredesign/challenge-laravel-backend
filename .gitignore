@@ -1,0 +1,42 @@
+/node_modules
+/public/hot
+/public/storage
+/public/css
+/public/js
+/public/mix-manifest.json
+/public/*.js
+/storage/*.key
+/vendor
+.env
+.env.testing
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/test_reports
+
+## IDE-helper
+/.phpstorm.meta.php
+/_ide_helper*
+
+## PhpStorm
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
