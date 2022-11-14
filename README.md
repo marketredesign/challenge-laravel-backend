@@ -49,6 +49,11 @@ For more information see [Laravel Sail](https://laravel.com/docs/8.x/sail).
 For development purposes, it is recommended to serve the application either using
 [Laravel Valet](https://laravel.com/docs/8.x/valet) (A linux fork is available) or `php artisan serve`.
 
+## Sample data
+An anonymized dataset of transactions can be found at [data/challenge_data.csv](./data/challenge_data.csv). Please 
+create an appropriate database structure, using Laravel's migrations, into which these transactions with their 
+predictive prices can be imported.
+
 ## Running the tests
 
 In order to run the tests, the dev dependencies from Composer need to be installed.
